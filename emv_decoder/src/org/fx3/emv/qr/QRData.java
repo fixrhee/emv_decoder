@@ -1,6 +1,7 @@
 package org.fx3.emv.qr;
 
 import java.io.Serializable;
+
 import org.apache.commons.lang3.StringUtils;
 
 public class QRData implements Serializable, Comparable<QRData> {
