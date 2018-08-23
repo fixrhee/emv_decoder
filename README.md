@@ -3,7 +3,7 @@ Java Based EMV QRCode Decoder
 
 To Compose an EMV :
 
-QRComposer bc = new QRComposer();
+		QRComposer bc = new QRComposer();
 		bc.setCrc(new DefaultCrcCalculator());
 
 		bc.set("00", "01");
@@ -11,12 +11,12 @@ QRComposer bc = new QRComposer();
 		bc.set("02", "1234567890123456");
 		bc.set("03", "1234567890123456");
 
-		bc.set("26", "00", "ID.CO.OPTIMA-S");
+		bc.set("26", "00", "ID.CO.OPTIMA");
 		bc.set("26", "01", "1110000112341112007"); // merchant PAN
 		bc.set("26", "02", "1112007"); // MID
 		bc.set("26", "03", "UMI");
 
-		bc.set("51", "00", "ID.CO.OPT");
+		bc.set("51", "00", "ID.CO.OPTIMA");
 		bc.set("51", "02", "1112007"); // MID
 		bc.set("51", "03", "UMI");
 
